@@ -352,7 +352,7 @@ set_from_resource $i3-wm.bar.workspace.urgent.background.color i3-wm.bar.workspa
 set_from_resource $i3-wm.bar.workspace.urgent.text.color i3-wm.bar.workspace.urgent.text.color "#fdf6e3"
 
 # Sets i3 font for dialogs
-set_from_resource $i3-wm.font i3-wm.font "pango:Source Code Pro Medium 13"
+set_from_resource $i3-wm.font i3-wm.font "font pango:Source Code Pro Medium 13, FontAwesome 13"
 font $i3-wm.font
 
 set_from_resource $i3-wm.bar.position i3-wm.bar.position bottom
