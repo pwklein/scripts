@@ -122,3 +122,4 @@ if [ -f ~/scripts/aliases.sh ]; then
     . ~/scripts/aliases.sh
 fi
 
+export PATH=~/.miniconda/bin:$PATH
