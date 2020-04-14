@@ -123,3 +123,8 @@ if [ -f ~/scripts/aliases.sh ]; then
 fi
 
 export PATH=~/.miniconda/bin:$PATH
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+neofetch

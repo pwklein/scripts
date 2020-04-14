@@ -35,7 +35,8 @@ floating_modifier $mod
 hide_edge_borders smart
 
 ## Launch // Terminal // <Super> Enter ##
-bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+bindsym $mod+Return exec /usr/bin/st
+#x-terminal-emulator
 
 ## Launch // Browser // <Super><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
@@ -202,8 +203,8 @@ bindsym $mod+Escape exec gnome-screensaver-command --lock
 ## Session // Sleep // <Super><Shift> s ##
 bindsym $mod+Shift+s exec systemctl suspend
 
-## Modify // Settings // <Super> c ##
-#  bindsym $mod+c exec gnome-control-center
+## Modify // Settings // <Super> s ##
+bindsym $mod+s exec gnome-control-center
 ## Modify // Display Settings // <Super> d ##
 #   bindsym $mod+d exec gnome-control-center display
 ## Modify // Wifi Settings // <Super> w ##
@@ -243,15 +244,15 @@ mode "Resize Mode" {
         bindsym Shift+Right resize grow width 12 px or 12 ppt
 
         ## Resize // Resize Window // k j h l ##
-        bindsym h resize shrink width 6 px or 6 ppt
-        bindsym k resize grow height 6 px or 6 ppt
-        bindsym j resize shrink height 6 px or 6 ppt
-        bindsym l resize grow width 6 px or 6 ppt
+       # bindsym h resize shrink width 6 px or 6 ppt
+       # bindsym k resize grow height 6 px or 6 ppt
+       # bindsym j resize shrink height 6 px or 6 ppt
+       # bindsym l resize grow width 6 px or 6 ppt
 
-        bindsym Shift+h resize shrink width 12 px or 12 ppt
-        bindsym Shift+k resize grow height 12 px or 12 ppt
-        bindsym Shift+j resize shrink height 12 px or 12 ppt
-        bindsym Shift+l resize grow width 12 px or 12 ppt
+       # bindsym Shift+h resize shrink width 12 px or 12 ppt
+       # bindsym Shift+k resize grow height 12 px or 12 ppt
+       # bindsym Shift+j resize shrink height 12 px or 12 ppt
+       # bindsym Shift+l resize grow width 12 px or 12 ppt
 
         ## Resize // Window Gaps // + - ##
         bindsym minus gaps inner current minus 6
@@ -270,8 +271,8 @@ bindsym $mod+r mode "Resize Mode"
 bindsym $mod+Shift+question exec --no-startup-id /usr/bin/remontoire-toggle
 
 # Disable titlebar
-set_from_resource $i3-wm.window.border.size i3-wm.window.border.size 1
-set_from_resource $i3-wm.floatingwindow.border.size i3-wm.floatingwindow.border.size 1
+set_from_resource $i3-wm.window.border.size i3-wm.window.border.size 0
+set_from_resource $i3-wm.floatingwindow.border.size i3-wm.floatingwindow.border.size 0
 default_border pixel $i3-wm.window.border.size
 default_floating_border pixel $i3-wm.floatingwindow.border.size
 
@@ -282,7 +283,7 @@ gaps inner $i3-wm.gaps.inner.size
 gaps outer $i3-wm.gaps.outer.size
 
 # Only enable gaps on a workspace when there is at least one container
-smart_gaps on
+#smart_gaps on
 
 # Create variables from Xresources for i3's look.
 set_from_resource $focused.color.border i3-wm.client.focused.color.border "#002b36"
@@ -400,4 +401,4 @@ exec --no-startup-id /usr/share/rofication/rofication-daemon.py
 exec --no-startup-id /usr/bin/regolith-ftue
 
 # Hide the mouse pointer if unused for a duration
-exec --no-startup-id /usr/bin/unclutter -b
+#exec --no-startup-id /usr/bin/unclutter -b
