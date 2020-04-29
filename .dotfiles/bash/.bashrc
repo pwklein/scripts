@@ -117,4 +117,4 @@ export PATH=~/.miniconda/bin:$PATH
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export EDITOR=vim
-neofetch
+complete -o bashdefault -o default -F _fzf_path_completion zathura
