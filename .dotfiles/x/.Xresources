@@ -88,8 +88,16 @@ URxvt*shading: 20
 !--------------------------------------------
 ! Custom DPI
 !--------------------------------------------
-
-Xft.dpi: 144
+#ifdef	SRVR_arch_acer
+	#define	DPI	80
+	#define CUR_SIZE	8		
+#elif	defined	SRVR_arch_mac
+	#define	DPI	144
+	#define CUR_SIZE	32
+#else
+	#define	DPI	144	
+#endif
+Xft.dpi:	DPI
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
@@ -97,5 +105,4 @@ Xft.hinting: 	true
 Xft.antialias: 1
 Xft.rgba: rgb
 rofi.dpi: 192
-
-Xcursor.size: 32
+Xcursor.size:	CUR_SIZE 
