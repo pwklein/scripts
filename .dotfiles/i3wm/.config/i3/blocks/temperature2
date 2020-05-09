@@ -1,8 +1,4 @@
 #!/bin/bash
-if [[ "$(echo $HOSTNAME)" = "arch" ]]; then
-	echo $(sensors | grep Tdie | awk '{print $2}')
-	exit 0
-fi
 
 TEMP_DEVICE="${BLOCK_INSTANCE:-Core}"
 TEMP_OUTPUT=$(sensors | grep "${TEMP_DEVICE}")
