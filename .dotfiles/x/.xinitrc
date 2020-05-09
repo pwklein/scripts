@@ -1,3 +1,9 @@
 xrdb -merge ~/.Xresources
-feh --bg-max ~/wallpapers/background_stains_dirt_dark_texture_69439_2560x1600.jpg
+if [[ "$(echo $HOSTNAME)" = "arch" ]]; then
+	feh --bg-max ~/scripts/arch_wallpaper.jpg
+fi
+if [[ "$(echo $HOSTNAME)" = "arch-mac" ]]; then
+	feh --bg-max ~/scripts/arch_mac_wallpaper.jpg
+fi
 exec i3
+
