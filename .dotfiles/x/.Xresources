@@ -93,7 +93,7 @@ URxvt*shading: 20
 #elif	defined	SRVR_arch_mac
 	#define	DPI	144
 #endif
-Xft.dpi:	DPI
+Xft.dpi:	DPI	
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight

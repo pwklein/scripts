@@ -17,3 +17,5 @@ if [ -f ~/scripts/aliases.sh ]; then
 fi
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+export PATH=/opt/miniconda3/bin:$PATH
