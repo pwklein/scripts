@@ -36,3 +36,4 @@ alias ytdl_mp3='youtube-dl --ignore-errors --format bestaudio --extract-audio --
 alias weather='curl wttr.in'
 alias vpip='$(echo $CONDA_PREFIX/bin/pip)'
 alias vpython='$(echo $CONDA_PREFIX/bin/python)'
+alias paclist='$(sudo pacman -Qqe > /home/pwk/scripts/paclist.txt )'
