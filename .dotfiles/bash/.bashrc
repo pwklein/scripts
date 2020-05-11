@@ -16,6 +16,18 @@ if [ -f ~/scripts/aliases.sh ]; then
     . ~/scripts/aliases.sh
 fi
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/pwk/tools/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/pwk/tools/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/pwk/tools/miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/pwk/tools/miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
-export PATH=/opt/miniconda3/bin:$PATH
