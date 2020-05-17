@@ -83,8 +83,8 @@ URxvt.tabbed.tab-fg: 15
 URxvt.tabbed.tab-bg: 4
 URxvt*buffered: false
 URxvt*transparent: true
-URxvt*shading: 20
-
+URxvt*shading: 25
+urxvt.perl-ext-common: default,resize-font
 !--------------------------------------------
 ! Custom DPI
 !--------------------------------------------
