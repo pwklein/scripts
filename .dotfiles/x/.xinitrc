@@ -4,6 +4,7 @@ if [[ "$(echo $HOSTNAME)" = "arch" ]]; then
 fi
 if [[ "$(echo $HOSTNAME)" = "arch-mac" ]]; then
 	feh --bg-max ~/scripts/arch_mac_wallpaper.jpg
+	sudo modprobe brcmfmac
 fi
 exec i3
 
