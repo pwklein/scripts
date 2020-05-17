@@ -1,7 +1,7 @@
 ! special
-*.foreground:   #f1ebeb
+*.foreground:   #cccfed
 *.background:   #272822
-*.cursorColor:  #f1ebeb
+*.cursorColor:  #cccfed
 
 ! black
 *.color0:       #48483e
@@ -34,7 +34,6 @@
 ! white
 *.color7:       #acada1
 *.color15:      #cfd0c2
-
 
 ! Rofi
 rofi.font: monospace 12
