@@ -60,3 +60,15 @@ class my_edit(Command):
         # This is a generic tab-completion function that iterates through the
         # content of the current directory.
         return self._tab_directory_content()
+
+from ranger.api.commands import Command
+
+
+from subprocess import PIPE
+class cdf(Command):
+    def execute(self):
+        command="sudo find /. -type d | fzf --height=20% --layout=reverse --border"
+        fzf = self.fm.execute_command(command, stdout=PIPE)
+        stdout, stderr = fzf.communicate()
+        directory = stdout.decode('utf-8').rstrip('\n')
+        self.fm.cd(directory)

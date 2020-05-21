@@ -22,7 +22,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec urxvt
 # suspend
-bindsym $mod+Shift+s exec systemctl suspend
+bindsym $mod+Shift+s exec ~/scripts/power_dmenu.sh
 
 # zathura
 bindsym $mod+z exec ~/scripts/zathura_dmenu.sh
