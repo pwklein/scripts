@@ -19,7 +19,7 @@ alias la='ls -A1'
 alias ll='ls -alF1'
 alias gits='git status'
 alias cdf='cd $HOME && cd "$(find -type d | fzf --height=20% --border --layout=reverse)" && echo $(pwd)'
-alias vimf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xargs -ro -d "\n" vim'
+alias vimf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xargs -ro -d "\n" nvim'
 alias catf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xargs cat'
 alias mvf='mv -t $(find ~/. -type d | fzf --height=20% --header="Destination directory:" --border --layout=reverse) $(find ~/. |
 fzf -m --height=20% --border --header="Files/directories to move" --layout=reverse)'
