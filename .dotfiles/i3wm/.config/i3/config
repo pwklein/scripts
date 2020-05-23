@@ -38,7 +38,13 @@ bindsym $mod+Shift+Return exec firefox
 bindsym $mod+q kill
 
 # start dmenu 
-bindsym $mod+d exec dmenu_run -c -l 10
+bindsym $mod+d exec dmenu_run\
+    -nb "${COLOR_BACKGROUND:-#151515}" \
+    -nf "${COLOR_DEFAULT:-#aaaaaa}" \
+    -sf "${COLOR_HIGHLIGHT:-#589cc5}" \
+    -sb "#1a1a1a" \
+    -i -p "Run application" \
+-c -l 10
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus

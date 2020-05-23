@@ -1,4 +1,3 @@
-acpi
 alsa-utils
 amd-ucode
 autoconf
@@ -7,6 +6,8 @@ base
 bc
 binutils
 bison
+cmake
+diffpdf
 efibootmgr
 fakeroot
 feh
@@ -26,9 +27,13 @@ linux-firmware
 m4
 make
 man-db
+mathematica
+neovim
 networkmanager
+openconnect
 openssh
 patch
+pdftk
 pkgconf
 pulseaudio
 pulseaudio-alsa
@@ -38,10 +43,12 @@ rxvt-unicode-pixbuf
 stow
 sudo
 texinfo
+texlive-core
 thunderbird
 trash-cli
 tree
 ttf-font-awesome
+urxvt-resize-font-git
 vim
 which
 xclip
