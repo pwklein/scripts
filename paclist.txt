@@ -15,6 +15,7 @@ firefox
 flex
 fzf
 gcc
+gcr
 git
 grub
 htop
@@ -37,9 +38,11 @@ pdftk
 pkgconf
 pulseaudio
 pulseaudio-alsa
+qutebrowser
 ranger
 rsync
 rxvt-unicode-pixbuf
+scrot
 stow
 sudo
 texinfo
@@ -48,8 +51,10 @@ thunderbird
 trash-cli
 tree
 ttf-font-awesome
+unzip
 urxvt-resize-font-git
 vim
+webkit2gtk
 which
 xclip
 xorg-server
