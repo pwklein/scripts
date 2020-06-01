@@ -4,6 +4,7 @@ amd-ucode
 autoconf
 automake
 base
+bashtop-git
 bc
 binutils
 bison
