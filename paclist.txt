@@ -9,7 +9,6 @@ bc
 binutils
 bison
 cmake
-diffpdf
 efibootmgr
 fakeroot
 feh
@@ -18,6 +17,7 @@ flex
 fzf
 gcc
 gcr
+ghostscript
 git
 grub
 htop
@@ -37,7 +37,6 @@ networkmanager
 openconnect
 openssh
 patch
-pdftk
 picom
 pkgconf
 pulseaudio
@@ -66,9 +65,11 @@ which
 xclip
 xorg-server
 xorg-xinit
+xournalpp
 yapf
 yay-git
 zathura
 zathura-pdf-poppler
 zoom
 zsh
+zsh-syntax-highlighting

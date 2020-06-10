@@ -42,3 +42,7 @@ alias vpython='$(fcho $CONDA_PREFIX/bin/python)'
 alias weather='curl wttr.in'
 alias ytdl_mp3='youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist'
 alias zt='~/scripts/zathura_dmenu.sh'
+alias mountf='sudo mount $(find /dev/sd* | fzf --height=10% --layout=reverse --border) /mnt/ && cd /mnt && colorls -a'
+alias demount='cd && sudo umount /mnt'
+alias compress-pdf='gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -o'
+
