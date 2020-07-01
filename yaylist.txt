@@ -1,0 +1,13 @@
+bashtop-git
+jupyterthemes
+mathematica
+nerd-fonts-complete
+python-lesscpy
+ruby-clocale
+ruby-colorls
+ruby-filesize
+rxvt-unicode-pixbuf
+spaceship-prompt-git
+urxvt-resize-font-git
+yay-git
+zoom
