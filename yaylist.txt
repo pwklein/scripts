@@ -1,6 +1,5 @@
 bashtop-git
 jupyterthemes
-mathematica
 nerd-fonts-complete
 python-lesscpy
 ruby-clocale
