@@ -1,9 +1,11 @@
 sudo virt-install\
-		--name harrer\
-		--ram=2048\
-		--vcpus=1,maxvcpus=2\
+		--name mephisto\
+		--ram=4096\
+		--vcpus=1,maxvcpus=4\
 		--cpu host\
 		--hvm\
-		--disk path=/var/lib/libvirt/images/test_vm1,size=20,pool=images\
-		--cdrom /var/lib/libvirt/isos/debian10.iso\
-		--graphics vnc,port=5901
+		--boot uefi\
+		--disk path=/var/lib/libvirt/images/image_mephisto,size=40,pool=images\
+		--cdrom /var/lib/libvirt/isos/arch.iso\
+		--network bridge=br0\
+		--graphics vnc,port=5902
