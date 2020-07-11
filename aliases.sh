@@ -47,6 +47,7 @@ alias vimf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xarg
 alias vpip='$(echo $CONDA_PREFIX/bin/pip)'
 alias vpython='$(fcho $CONDA_PREFIX/bin/python)'
 alias weather='curl wttr.in'
+alias x='exit'
 alias yay-si='yay -Slq | fzf --border --height=25% --layout=reverse --multi --preview "yay -Si {1}" | xargs -ro yay -S'
 alias ytdl_mp3='youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist'
 alias z='zathura'
