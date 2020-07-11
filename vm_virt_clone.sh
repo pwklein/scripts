@@ -1,6 +1,6 @@
 #!/bin/bash
 
 virt-clone \
-		--original mephisto \
-		--name arch \
-		--file /var/lib/libvirt/images/arch.qcow2
+		--original arch \
+		--name $1 \
+		--file /var/lib/libvirt/images/$(echo $1).qcow2
