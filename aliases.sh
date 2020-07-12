@@ -20,6 +20,7 @@ alias enf='conda activate $(ls ~/tools/miniconda/envs/ | fzf --height=5% --borde
 alias fgrep='fgrep --color=auto'
 alias gits='git status'
 alias grep='grep --color=auto'
+alias iv='sxiv'
 alias jup='jupyter-notebook "$(find ~/. -type f -iname "*.ipynb" | dmenu -c -l 10)" &>/dev/null &'
 alias jupn='jupyter-notebook &>/dev/null &'
 alias l='colorls -1'
