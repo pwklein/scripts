@@ -8,5 +8,4 @@ ruby-filesize
 rxvt-unicode-pixbuf
 spaceship-prompt-git
 urxvt-resize-font-git
-yay-git
 zoom
