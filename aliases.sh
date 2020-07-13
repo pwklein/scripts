@@ -57,3 +57,5 @@ alias ytdl_mp3='youtube-dl --ignore-errors --format bestaudio --extract-audio --
 alias z='zathura'
 alias zd='~/scripts/zathura_dmenu.sh'
 alias zf='~/scripts/zathura_fzf.sh'
+alias pac-comp='~/scripts/pac-comp.sh'
+alias yay-comp='~/scripts/yay-comp.sh'
