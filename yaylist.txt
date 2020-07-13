@@ -17,5 +17,7 @@ ruby-filesize
 rxvt-unicode-pixbuf
 spaceship-prompt-git
 urxvt-resize-font-git
+<<<<<<< HEAD
 xorg-font-utils
 yay
+zoom
