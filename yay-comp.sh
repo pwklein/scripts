@@ -5,8 +5,7 @@ compare_to="$1"
 while read pack; do
 		package="$pack"
 		hostname="$(echo $HOSTNAME)"
-		grep_res="$(cat ~/private_files/yaylist_${hostname}.txt | grep ${package})"
-
+		grep_res="$(grep -x ${package} ~/private_files/yaylist_${hostname}.txt)"
 		if [ "$package" = "$grep_res" ];then
 				echo "" > /dev/null
 		else
