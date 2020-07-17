@@ -1,5 +1,5 @@
 #!/bin/bash
 
 sudo sh -c 'echo "
-$(figlet $(echo $HOSTNAME))
+$(figlet -f /home/pwk/scripts/figlet_font.flf "$(echo $HOSTNAME)")
 " > /etc/issue'
