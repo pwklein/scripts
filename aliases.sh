@@ -5,6 +5,7 @@
 alias ..='cd ..'
 alias arch-clone='~/scripts/vm_virt_clone.sh'
 alias backup-cpht='~/scripts/backup.sh'
+alias bot='python ~/scripts/telegram_bot.py'
 alias c='clear'
 alias catf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xargs cat'
 alias cdf='cd $HOME && cd "$(find -type d | fzf --height=20% --border --layout=reverse)" && echo $(pwd)'
