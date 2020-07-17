@@ -2,8 +2,11 @@ import requests
 import sys
 sys.path.insert(1, "/home/pwk/private_files/")
 from script_bot import *
+import socket
 
+hostname = socket.gethostname()
 image_path = sys.argv[1]
+
 
 def send_photo(bot_chatID, bot_token, image_path, image_caption=""):
     data = {"chat_id": bot_chatID, "caption": image_caption}
@@ -13,5 +16,7 @@ def send_photo(bot_chatID, bot_token, image_path, image_caption=""):
     return ret.json()
 
 
-send_photo(bot_chatID, bot_token, image_path, image_caption="")
-
+send_photo(bot_chatID,
+           bot_token,
+           image_path,
+           image_caption=hostname + ': ' + image_path)
