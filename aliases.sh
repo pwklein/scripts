@@ -12,6 +12,7 @@ alias catf='find ~/. -type f | fzf --height=20% --border --layout=reverse | xarg
 alias cdf='cd $HOME && cd "$(find -type d | fzf --height=20% --border --layout=reverse)" && echo $(pwd)'
 alias compress-pdf='gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -o'
 alias conda-export='~/scripts/conda_export.sh'
+alias config-remote='~/scripts/config-remote.sh'
 alias cpf='cp -rt $(find ~/. -type d | fzf --height=20% --header="Destination directory:" --border --layout=reverse) $(find ~/. | fzf -m --height=20% --border --header="Files/directories to copy" --layout=reverse)'
 alias deac='conda deactivate'
 alias del='trash-put'
