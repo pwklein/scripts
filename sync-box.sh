@@ -1,15 +1,24 @@
 #!/bin/bash
 
+notification () {
+		
+		if pgrep -x "dunst" > /dev/null; then
+				notify-send 'Box sync' "$1"
+		else
+				echo $1
+		fi
+}
+
 if pgrep -x "nextcloudcmd" > /dev/null
 then
-		notify-send 'Box sync' 'Already running'
+		notification 'Already running'
 		exit 1
 fi
 
-notify-send 'Box sync' 'started'
+notification 'started'
 
 source $HOME/private_files/box_config.sh
-OUT_FILE=".nextcloudcmd.txt"
+OUT_FILE="$HOME/.local/.nextcloudcmd.txt"
 
 #password="$(dmenu \
 		#-nb "${COLOR_BACKGROUND:-#151515}" \
@@ -18,8 +27,7 @@ OUT_FILE=".nextcloudcmd.txt"
 		#-sb "#1a1a1a" \
 		#-c \
 		#-p "password:" <&-)"
-if [[ "$(echo $HOSTNAME)" = "gauss" ]]; then
-echo "hello"
+if [[ "$(echo $HOSTNAME)" = "gauss" ]] || [[ "$(echo $HOSTNAME)" = "piper" ]]; then
 nextcloudcmd \
 		--unsyncedfolders $HOME/scripts/unsynced.txt \
 		$HOME/box \
@@ -34,13 +42,13 @@ cat .nextcloudcmd.txt | grep "exclude"
 FEEDBACK=
 if grep 'Authentication failed' "$OUT_FILE" >/dev/null; then
 		FEEDBACK="Authentication failed"
-		notify-send --urgency=critical 'Box sync' "$FEEDBACK"
+		notification "$FEEDBACK"
 elif grep 'Network error' "$OUT_FILE" >/dev/null; then
 		FEEDBACK="Network error"
-		notify-send --urgency=critical 'Box sync' "$FEEDBACK"
+		notification "$FEEDBACK"
 else
 		FEEDBACK="done"
 		trash-put $OUT_FILE
-		notify-send --urgency=normal 'Box sync' "$FEEDBACK"
+		notification "$FEEDBACK"
 fi
 
