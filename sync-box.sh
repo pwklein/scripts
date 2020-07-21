@@ -38,7 +38,6 @@ nextcloudcmd \
 		https://$user:$pass@box.pwklein.com/remote.php/webdav/ </dev/null >"$OUT_FILE" 2>&1
 fi
 
-cat .nextcloudcmd.txt | grep "exclude"
 FEEDBACK=
 if grep 'Authentication failed' "$OUT_FILE" >/dev/null; then
 		FEEDBACK="Authentication failed"
