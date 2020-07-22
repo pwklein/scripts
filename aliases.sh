@@ -65,3 +65,4 @@ alias ytdl_mp3='youtube-dl --ignore-errors --format bestaudio --extract-audio --
 alias z='zathura'
 alias zd='~/scripts/zathura_dmenu.sh'
 alias zf='~/scripts/zathura_fzf.sh'
+alias osync='~/scripts/osync-box.sh'
