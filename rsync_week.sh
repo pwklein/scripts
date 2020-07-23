@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DAY=$(date +%A)
+DAY=$(date +%d)
 ssh harrer << HERE
 if [ -e "$HOME/osync-backup/$DAY" ] ; then
   rm -fr "$HOME/osync-backup/$DAY"
