@@ -27,7 +27,7 @@ OUT_FILE="$HOME/.local/.nextcloudcmd.txt"
 		#-sb "#1a1a1a" \
 		#-c \
 		#-p "password:" <&-)"
-if [[ "$(echo $HOSTNAME)" = "heisenberg" ]] || [[ "$(echo $HOSTNAME)" = "gauss" ]] || [[ "$(echo $HOSTNAME)" = "piper" ]]; then
+if [[ "$(echo $HOSTNAME)" = "gauss" ]]; then
 nextcloudcmd \
 		--unsyncedfolders $HOME/scripts/unsynced.txt \
 		$HOME/box \
