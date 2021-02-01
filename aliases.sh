@@ -3,6 +3,7 @@
 #my aliases
 
 alias ..='cd ..'
+alias cpdf='~/scripts/cpdf.sh'
 alias arch-clone='~/scripts/vm_virt_clone.sh'
 alias backup-cpht='~/scripts/backup.sh'
 alias bot-image='python ~/scripts/telegram_bot_image.py'

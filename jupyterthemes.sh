@@ -4,4 +4,4 @@
 
 #jt -t onedork -fs 95 -altp -tfs 11 -nfs 90 -kl -cellw 95% -cursw 3 -cursc r  -T -N
 
-jt -t onedork -vim -f source -fs 110 -altp -tfs 11 -nfs 100 -kl -cellw 95% -cursw 3 -cursc r  -T -N
+jt -t gruvboxd -vim -f source -fs 110 -altp -tfs 11 -nfs 100 -kl -cellw 95% -cursw 3 -cursc r  -T -N
